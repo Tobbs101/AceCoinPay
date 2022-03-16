@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/myicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AceCoinPay</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper grid grid-cols-12">
+      <div id="close-btn"><i class="fa-solid fa-xmark"></i></div>
+      <div class="col-span-12 md:col-span-8">
+        <div class="form">
+          <header class="form-header">
+            <div class="logo">
+              <span class="logo-circle"><img src="/assets/wallet.svg" alt="wallet" id="logo-icon"></span>
+              <h1>AceCoin<span class="lean">Pay</span></h1>
+            </div>
+            <div class="timer"><!--
+              <span class="timer-box" id="day-1"></span>
+              <span class="timer-box" id="day-2"></span>
+              <span class="timer-divider">:</span>
+              <span class="timer-box" id="month-1"></span>
+              <span class="timer-box" id="month-2"></span>
+              <span class="timer-divider">:</span>
+              <span class="timer-box" id="year-1"></span>
+              <span class="timer-box" id="year-2"></span>
+              <span class="timer-divider">:</span>-->
+              <span class="timer-box" id="hour-1" style="margin-right: 0.1em;"></span>
+              <span class="timer-box" id="hour-2"></span>
+              <span class="timer-divider">:</span>
+              <span class="timer-box" id="minutes-1" style="margin-right: 0.1em;"></span>
+              <span class="timer-box" id="minutes-2"></span>
+              <span class="timer-divider">:</span>
+              <span class="timer-box" id="seconds-1" style="margin-right: 0.1em;"></span>
+              <span class="timer-box" id="seconds-2"></span>
+            </div>
+          </header>
+          <section class="form-body">
+            <form action="">
+              <div class="input-group">
+                <div class="header">
+                  <div class="description">
+                    <h2 class="title" id="h2-title">card number</h2>
+                    <p class="desc">Enter the 15-digit card number on the card</p>
+                  </div>
+                  <button id="edit">
+                    <span class="btn-desc"><i class="fa-solid fa-pencil" id="icon"></i> Edit</span>
+                  </button>
+                </div>
+                <div class="main">
+                  <img src="assets/Mastercard.svg" alt="" id="leading-master-icon">
+                  <img src="assets/visa.svg" alt="" id="leading-visa-icon">
+                  <img src="assets/verve.svg" alt="" id="leading-verve-icon">
+                  <input type="text" placeholder="5112     -     7512     -     3412     -     3456" id="input-card" class="input-card">
+                  <img src="assets/verified(2).svg" alt="" id="trailing-icon">
+                </div>
+              </div>
+              <div class="input-group __col">
+                <div class="header">
+                  <div class="description">
+                    <h2 class="title" id="h2-title">CVV number</h2>
+                    <p class="desc">Enter the 3 or 4 digit number on the card</p>
+                  </div>
+                </div>
+                <div class="main">
+                  <input type="text" placeholder="327" id="input-cvv">
+                  <img src="assets/dots.svg" alt="" id="cvv-icon">
+                </div>
+              </div>
+              <div class="input-group __col">
+                <div class="header">
+                  <div class="description">
+                    <h2 class="title" id="h2-title">Expiry Date</h2>
+                    <p class="desc">Enter the expiration date of the card</p>
+                  </div>
+                </div>
+                <div id="grp">
+                  <div class="main">
+                    <input type="text" placeholder="09" id="input-expiry-month">
+                  </div>
+                  <span id="divider">/</span>
+                  <div class="main">
+                    <input type="text" placeholder="22" id="input-expiry-year">
+                  </div>
+                </div>
+              </div>
+              <div class="input-group __col">
+                <div class="header">
+                  <div class="description">
+                    <h2 class="title" id="h2-title">Password</h2>
+                    <p class="desc">Enter your Dynamic password</p>
+                  </div>
+                </div>
+                <div class="main">
+                  <input type="password" placeholder="* * * * * * * *" id="input-password">
+                  <img src="assets/dots.svg" alt="" id="cvv-icon">
+                </div>
+              </div>
+              <div class="input-group">
+                <button type="submit" id="btn">Pay Now</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="col-span-12 md:col-span-4">
+        <div class="card-section">
+          <div class="lower-card">
+            <div id="top-img">
+              <img src="/assets/chip.png" alt="" id="chip-img">
+              <i class="fa-solid fa-wifi fa-beat"></i>
+            </div>
+            <p id="card-text">Oluwatobiloba Idowu</p>
+            <p id="card-number">****<span>      3456</span></p>
+            <div class="lower-details">
+              <p id="card-date">09/22</p>
+              <img src="/assets/mastercard-2.svg" alt="" id="card-type">
+            </div>
+          </div>
+          <div class="upper-card">
+            <span id="text">
+              <span id="first-text">Company</span>
+              <span id="second-text"><i class="fa-brands fa-apple"></i> Apple</span>
+            </span>
+            <span id="text">
+              <span id="first-text">Order Number</span>
+              <span id="second-text">1266201</span>
+            </span>
+            <span id="text">
+              <span id="first-text">Product</span>
+              <span id="second-text">MacBook Air</span>
+            </span>
+            <span id="text">
+              <span id="first-text">VAT(7.5%)</span>
+              <span id="second-text">₦ 120,000.00</span>
+            </span>
+            <div id="seperator"></div>
+            <span id="text2">
+              <span id="receipt-text">
+                470,000.00<span id="currency-text"> NGN</span>
+              </span>
+              <span id="second-text"><img src="/assets/invoice.svg"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script src="/cleave.js"></script>
+  </body>
+</html>
